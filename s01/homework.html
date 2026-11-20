@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 1 Homework · RoboKids</title>
+<link rel="stylesheet" href="../assets/rk.css">
+</head>
+<body class="page">
+<header class="topbar">
+  <div class="logo-wrap"><img src="../assets/logo.jpg" alt="RoboKids"></div>
+  <a href="../index.html" class="topbar-home">← All Homework</a>
+  <div class="topbar-title-wrap">
+    <div class="topbar-crumb">AP CSP · Session 1</div>
+    <div class="topbar-title">Homework</div>
+  </div>
+  <div class="topbar-section-tag" id="sectionTag">HOMEWORK</div>
+</header>
+
+<div class="page-wrap" id="hwRoot" data-session="Session 1 · Hello, AP CSP">
+  <div class="page-hero">
+    <div class="title-eyebrow">Session 1 · Homework</div>
+    <h1>Hello, AP CSP</h1>
+    <p>About 30–50 minutes. Answer the multiple-choice questions first (they're in AP pseudocode, like the exam), then the 3 Python coding tasks: a warm-up, a challenge and a stretch task. Due before next session.</p>
+    <div class="meta-row"><span class="meta-chip">5 AP-style MCQ</span><span class="meta-chip">3 coding tasks</span><span class="meta-chip">Python runs right in this page</span></div>
+    <div style="margin-top:16px;position:relative;"><input class="name-input" id="nameInput" placeholder="Your name"></div>
+  </div>
+  <div class="card">
+    <h3 class="card-title">Part A · Multiple choice</h3>
+    <p>Pick an answer for each (two where it says so), then press <b>Check my answers</b> to see your score and the explanations.</p>
+    <div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q1</span><span class="q-topic">DISPLAY</span></div>
+  <div class="q-text">What is displayed?</div>
+  <div class="quiz-code-prompt ap"><span class="fn">DISPLAY</span>(<span class="num">2</span> + <span class="num">3</span>)
+<span class="fn">DISPLAY</span>(<span class="str">"2 + 3"</span>)</div>
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>5 2 + 3</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>5 5</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>2 + 3 2 + 3</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>5</code> and <code>2 + 3</code> on two lines</div></div></div>
+  <div class="q-why"><strong>Answer: 5 2 + 3.</strong> Without quotes, <code>2 + 3</code> is worked out (5). With quotes it's text and is shown exactly as typed. Both DISPLAYs share one line.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q2</span><span class="q-topic">Sequencing</span></div>
+  <div class="q-text">What is displayed?</div>
+  <div class="quiz-code-prompt ap">a <span class="arrow">←</span> <span class="num">1</span>
+b <span class="arrow">←</span> a
+a <span class="arrow">←</span> a + <span class="num">5</span>
+<span class="fn">DISPLAY</span>(a)
+<span class="fn">DISPLAY</span>(b)</div>
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>6 1</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>6 6</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>1 6</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>1 1</code></div></div></div>
+  <div class="q-why"><strong>Answer: 6 1.</strong> b gets a copy of a's value (1) on line 2. Line 3 changes a to 6 but doesn't touch b. Trace table: a = 1, b = 1, a = 6.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q3</span><span class="q-topic">Block form</span></div>
+  <div class="q-text">What does this program display?</div>
+  <div class="quiz-code-prompt blocks"><div class="apb">level <span class="arrow">←</span> <span class="num">2</span></div><div class="apb">level <span class="arrow">←</span> level * <span class="num">5</span></div><div class="apb"><span class="fn">DISPLAY</span>(<span class="str">"Level"</span>)</div><div class="apb"><span class="fn">DISPLAY</span>(level)</div></div>
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>Level 10</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>Level 2</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>Level 7</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>level 10</code></div></div></div>
+  <div class="q-why"><strong>Answer: Level 10.</strong> level starts at 2 and is multiplied by 5. The text "Level" (capital L, in quotes) is displayed exactly as written, then the value 10.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q4</span><span class="q-topic">Building blocks</span></div>
+  <div class="q-text">Which description matches <b>selection</b>?</div>
+  
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text">Choosing which statements run, based on a condition</div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text">Running statements one after another in order</div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text">Repeating a group of statements</div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text">Storing a value in a variable</div></div></div>
+  <div class="q-why"><strong>Answer: choosing which statements run, based on a condition.</strong> That's an IF. Running statements in order is sequencing, repeating is iteration, and storing a value is assignment.</div>
+</div>
+<div class="q" data-ans="0,1" data-multi="2">
+  <div class="q-head"><span class="quiz-q-num">Q5</span><span class="q-topic">Sequencing</span></div>
+  <div class="pick2">Select two answers</div><div class="q-text">A programmer wants a code segment that displays <code>6</code>. Which <b>two</b> code segments work?</div>
+  
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>x <span class="arrow">←</span> <span class="num">3</span><br>x <span class="arrow">←</span> x * <span class="num">2</span><br><span class="fn">DISPLAY</span>(x)</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>x <span class="arrow">←</span> <span class="num">4</span><br>x <span class="arrow">←</span> x + <span class="num">2</span><br><span class="fn">DISPLAY</span>(x)</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>x <span class="arrow">←</span> <span class="num">2</span><br><span class="fn">DISPLAY</span>(x)<br>x <span class="arrow">←</span> x + <span class="num">4</span></code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>x <span class="arrow">←</span> <span class="num">6</span><br>x <span class="arrow">←</span> x + <span class="num">1</span><br><span class="fn">DISPLAY</span>(x)</code></div></div></div>
+  <div class="q-why"><strong>Answer: 3 doubled, and 4 plus 2.</strong> Both store 6 before the DISPLAY. The segment that displays before adding 4 shows 2, and the one that adds 1 to 6 shows 7.</div>
+</div>
+    <div style="text-align:center;margin-top:16px;"><button class="btn" id="checkHw">Check my answers</button></div>
+  </div>
+  <div class="card">
+    <h3 class="card-title">Part B · Coding tasks</h3>
+    <div class="step">
+  <div class="lab-level easy">TASK 1 · WARM-UP · ~10 MIN</div>
+  <div class="step-title">Robot ID badge</div>
+  <p>Print this badge exactly. Build the <b>Skills</b> line from four separate <code>print</code> calls with <code>end=" "</code>, like four AP DISPLAYs, and build the <b>Moves</b> line by calculating <code>4 * 3</code> in your code.</p>
+  
+  <div class="expect">Expected output</div><pre class="code-block output small">*** ROBOT ID ***
+Name: Robo-7
+Skills: scan sort sing
+Moves: 12
+****************</pre>
+  <div class="py-runner compact" data-tpl="task1"></div>
+<script type="text/plain" id="task1">
+# Robot ID badge
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th1">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts1">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th1">Line 4: <code>print("Moves:", 4 * 3)</code>. Line 3 starts with <code>print("Skills:", end=" ")</code>.</div>
+  <div class="hidden-block" id="ts1"><pre class="code-block"><span class="fn">print</span>(<span class="str">"*** ROBOT ID ***"</span>)
+<span class="fn">print</span>(<span class="str">"Name: Robo-7"</span>)
+<span class="fn">print</span>(<span class="str">"Skills:"</span>, end=<span class="str">" "</span>)
+<span class="fn">print</span>(<span class="str">"scan"</span>, end=<span class="str">" "</span>)
+<span class="fn">print</span>(<span class="str">"sort"</span>, end=<span class="str">" "</span>)
+<span class="fn">print</span>(<span class="str">"sing"</span>)
+<span class="fn">print</span>(<span class="str">"Moves:"</span>, <span class="num">4</span> * <span class="num">3</span>)
+<span class="fn">print</span>(<span class="str">"****************"</span>)</pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div><div class="step">
+  <div class="lab-level hard">TASK 2 · CHALLENGE · ~15 MIN</div>
+  <div class="step-title">Translate AP to Python</div>
+  <p>Write a Python program that displays exactly what this AP program displays. First write the output on paper by tracing <code>coins</code>, then check it with your code.</p>
+  <pre class="code-block ap">coins <span class="arrow">←</span> <span class="num">5</span>
+<span class="fn">DISPLAY</span>(<span class="str">"Coins:"</span>)
+<span class="fn">DISPLAY</span>(coins)
+coins <span class="arrow">←</span> coins + <span class="num">7</span>
+<span class="fn">DISPLAY</span>(<span class="str">"Now:"</span>)
+<span class="fn">DISPLAY</span>(coins)
+coins <span class="arrow">←</span> coins * <span class="num">2</span>
+<span class="fn">DISPLAY</span>(<span class="str">"Doubled:"</span>)
+<span class="fn">DISPLAY</span>(coins)</pre>
+  <div class="expect">Expected output</div><pre class="code-block output small">Coins: 5 Now: 12 Doubled: 24</pre>
+  <div class="py-runner compact" data-tpl="task2"></div>
+<script type="text/plain" id="task2">
+# Translate the AP program
+coins = 5
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th2">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts2">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th2">Every DISPLAY becomes <code>print(..., end=" ")</code>. For the very last one, use a plain <code>print</code> so the line ends neatly.</div>
+  <div class="hidden-block" id="ts2"><pre class="code-block">coins = <span class="num">5</span>
+<span class="fn">print</span>(<span class="str">"Coins:"</span>, end=<span class="str">" "</span>)
+<span class="fn">print</span>(coins, end=<span class="str">" "</span>)
+coins = coins + <span class="num">7</span>
+<span class="fn">print</span>(<span class="str">"Now:"</span>, end=<span class="str">" "</span>)
+<span class="fn">print</span>(coins, end=<span class="str">" "</span>)
+coins = coins * <span class="num">2</span>
+<span class="fn">print</span>(<span class="str">"Doubled:"</span>, end=<span class="str">" "</span>)
+<span class="fn">print</span>(coins)</pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div><div class="step">
+  <div class="lab-level hard">TASK 3 · STRETCH · ~15 MIN</div>
+  <div class="step-title">Unscramble the program</div>
+  <p>These six lines got scrambled. Put <b>all six</b> lines in an order that prints the expected output. Don't change, add or remove any line. There's only one order that works, so use trace tables to test your ideas. When it works, write the same program in AP pseudocode as <code>#</code> comments underneath.</p>
+  <pre class="code-block"><span class="fn">print</span>(<span class="str">"Final speed:"</span>, speed)
+speed = speed * <span class="num">2</span>
+speed = <span class="num">4</span>
+speed = speed - <span class="num">3</span>
+<span class="fn">print</span>(<span class="str">"Start speed:"</span>, speed)
+speed = speed + <span class="num">10</span></pre>
+  <div class="expect">Expected output</div><pre class="code-block output small">Start speed: 4
+Final speed: 25</pre>
+  <div class="py-runner compact" data-tpl="task3"></div>
+<script type="text/plain" id="task3">
+# Put the six lines in the right order here
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th3">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts3">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th3">speed must start at 4 and be printed straight away. To reach 25 from 4 with +10, ×2 and −3, try working backwards: 25 + 3 = 28, and 28 ÷ 2 = 14.</div>
+  <div class="hidden-block" id="ts3"><pre class="code-block">speed = <span class="num">4</span>
+<span class="fn">print</span>(<span class="str">"Start speed:"</span>, speed)
+speed = speed + <span class="num">10</span>
+speed = speed * <span class="num">2</span>
+speed = speed - <span class="num">3</span>
+<span class="fn">print</span>(<span class="str">"Final speed:"</span>, speed)
+<span class="cm"># speed ← 4</span>
+<span class="cm"># DISPLAY("Start speed:")</span>
+<span class="cm"># DISPLAY(speed)</span>
+<span class="cm"># speed ← speed + 10</span>
+<span class="cm"># speed ← speed * 2</span>
+<span class="cm"># speed ← speed - 3</span>
+<span class="cm"># DISPLAY("Final speed:")</span>
+<span class="cm"># DISPLAY(speed)</span></pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div>
+  </div>
+  <div class="score-card" id="scoreCard">
+    <div class="eyebrow">Homework result</div>
+    <div class="score-big" id="scoreBig"></div>
+    <div class="score-sub" id="scoreSub"></div>
+    <div class="score-band" id="scoreBand"></div>
+    <p style="font-size:13px;color:var(--ink-soft);margin-top:12px;">Tick the task boxes above when your code works. Then 📸 screenshot this card for your teacher.</p>
+  </div>
+</div>
+<script src="../assets/rk.js"></script>
+</body></html>

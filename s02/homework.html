@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 2 Homework · RoboKids</title>
+<link rel="stylesheet" href="../assets/rk.css">
+</head>
+<body class="page">
+<header class="topbar">
+  <div class="logo-wrap"><img src="../assets/logo.jpg" alt="RoboKids"></div>
+  <a href="../index.html" class="topbar-home">← All Homework</a>
+  <div class="topbar-title-wrap">
+    <div class="topbar-crumb">AP CSP · Session 2</div>
+    <div class="topbar-title">Homework</div>
+  </div>
+  <div class="topbar-section-tag" id="sectionTag">HOMEWORK</div>
+</header>
+
+<div class="page-wrap" id="hwRoot" data-session="Session 2 · Variables, Expressions &amp; Assignment">
+  <div class="page-hero">
+    <div class="title-eyebrow">Session 2 · Homework</div>
+    <h1>Variables, Expressions &amp; Assignment</h1>
+    <p>About 30–50 minutes. Answer the multiple-choice questions first (they're in AP pseudocode, like the exam), then the 3 Python coding tasks: a warm-up, a challenge and a stretch task. Due before next session.</p>
+    <div class="meta-row"><span class="meta-chip">5 AP-style MCQ</span><span class="meta-chip">3 coding tasks</span><span class="meta-chip">Python runs right in this page</span></div>
+    <div style="margin-top:16px;position:relative;"><input class="name-input" id="nameInput" placeholder="Your name"></div>
+  </div>
+  <div class="card">
+    <h3 class="card-title">Part A · Multiple choice</h3>
+    <p>Pick an answer for each (two where it says so), then press <b>Check my answers</b> to see your score and the explanations.</p>
+    <div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q1</span><span class="q-topic">Assignment</span></div>
+  <div class="q-text">What is displayed?</div>
+  <div class="quiz-code-prompt ap">p <span class="arrow">←</span> <span class="num">5</span>
+q <span class="arrow">←</span> p * <span class="num">2</span>
+p <span class="arrow">←</span> q + p
+<span class="fn">DISPLAY</span>(p)
+<span class="fn">DISPLAY</span>(q)</div>
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>15 10</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>15 15</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>10 15</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>20 10</code></div></div></div>
+  <div class="q-why"><strong>Answer: 15 10.</strong> q = 5 × 2 = 10. Then p = q + p = 10 + 5 = 15. q keeps its value of 10.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q2</span><span class="q-topic">MOD</span></div>
+  <div class="q-text">What is displayed by <code>DISPLAY(25 MOD 7)</code>?</div>
+  
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>4</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>3</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>3.57</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>18</code></div></div></div>
+  <div class="q-why"><strong>Answer: 4.</strong> 7 fits into 25 three times (21), leaving a remainder of 4. 3 is the number of times it fits, not the remainder.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q3</span><span class="q-topic">Strings</span></div>
+  <div class="q-text"><code>substring(str, start, length)</code> returns <code>length</code> characters of <code>str</code> starting at position <code>start</code>, where the first character is position 1. What does <code>substring("pseudocode", 1, 6)</code> return?</div>
+  
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>"pseudo"</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>"seudoc"</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>"pseud"</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>"pseudoc"</code></div></div></div>
+  <div class="q-why"><strong>Answer: "pseudo".</strong> Position 1 is the first letter, p. Six letters: p-s-e-u-d-o. "seudoc" is what you'd get by counting from 0 like Python.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q4</span><span class="q-topic">Tracing</span></div>
+  <div class="q-text">What is displayed?</div>
+  <div class="quiz-code-prompt ap">x <span class="arrow">←</span> <span class="num">2</span>
+y <span class="arrow">←</span> <span class="num">3</span>
+x <span class="arrow">←</span> x + y
+y <span class="arrow">←</span> x - y
+x <span class="arrow">←</span> x - y
+<span class="fn">DISPLAY</span>(x)
+<span class="fn">DISPLAY</span>(y)</div>
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>3 2</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>2 3</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>5 2</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>3 5</code></div></div></div>
+  <div class="q-why"><strong>Answer: 3 2.</strong> Trace it: x = 5, then y = 5 − 3 = 2, then x = 5 − 2 = 3. It's a sneaky swap that uses maths instead of a temp variable.</div>
+</div>
+<div class="q" data-ans="0,1" data-multi="2">
+  <div class="q-head"><span class="quiz-q-num">Q5</span><span class="q-topic">Expressions</span></div>
+  <div class="pick2">Select two answers</div><div class="q-text">Which <b>two</b> expressions evaluate to <code>2</code>?</div>
+  
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>14 MOD 4</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>8 / 4</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>4 MOD 2</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>10 / 4</code></div></div></div>
+  <div class="q-why"><strong>Answer: 14 MOD 4 and 8 / 4.</strong> 14 = 3 × 4 + 2, so the remainder is 2, and 8 ÷ 4 = 2. 4 MOD 2 is 0 (no remainder), and 10 / 4 is 2.5.</div>
+</div>
+    <div style="text-align:center;margin-top:16px;"><button class="btn" id="checkHw">Check my answers</button></div>
+  </div>
+  <div class="card">
+    <h3 class="card-title">Part B · Coding tasks</h3>
+    <div class="step">
+  <div class="lab-level easy">TASK 1 · WARM-UP · ~10 MIN</div>
+  <div class="step-title">Temperature converter</div>
+  <p>Set <code>c = 25</code>. Calculate Fahrenheit with <code>f = c * 9 / 5 + 32</code>, then convert <b>back</b> with <code>(f - 32) * 5 / 9</code>, storing it in a new variable. Print all three lines. Let the code do every calculation.</p>
+  
+  <div class="expect">Expected output</div><pre class="code-block output small">Celsius: 25
+Fahrenheit: 77.0
+Back to Celsius: 25.0</pre>
+  <div class="py-runner compact" data-tpl="task1"></div>
+<script type="text/plain" id="task1">
+c = 25
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th1">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts1">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th1"><code>back = (f - 32) * 5 / 9</code>. The brackets matter: without them, only the 32 gets multiplied.</div>
+  <div class="hidden-block" id="ts1"><pre class="code-block">c = <span class="num">25</span>
+f = c * <span class="num">9</span> / <span class="num">5</span> + <span class="num">32</span>
+back = (f - <span class="num">32</span>) * <span class="num">5</span> / <span class="num">9</span>
+<span class="fn">print</span>(<span class="str">"Celsius:"</span>, c)
+<span class="fn">print</span>(<span class="str">"Fahrenheit:"</span>, f)
+<span class="fn">print</span>(<span class="str">"Back to Celsius:"</span>, back)</pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div><div class="step">
+  <div class="lab-level hard">TASK 2 · CHALLENGE · ~15 MIN</div>
+  <div class="step-title">Time machine</div>
+  <p>A robot ran for <code>total = 3725</code> seconds. Print how long that is in hours, minutes and seconds, using only <code>//</code> and <code>%</code>. There are 3600 seconds in an hour. Then, as a <code>#</code> comment, write how you would get the hours in AP pseudocode (remember: AP has no <code>//</code>).</p>
+  
+  <div class="expect">Expected output</div><pre class="code-block output small">3725 seconds = 1 h 2 min 5 s</pre>
+  <div class="py-runner compact" data-tpl="task2"></div>
+<script type="text/plain" id="task2">
+total = 3725
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th2">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts2">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th2">hours = <code>total // 3600</code>. What's left is <code>total % 3600</code> (125). Split that into minutes and seconds the same way, with 60.</div>
+  <div class="hidden-block" id="ts2"><pre class="code-block">total = <span class="num">3725</span>
+hours = total // <span class="num">3600</span>
+rest = total % <span class="num">3600</span>
+minutes = rest // <span class="num">60</span>
+seconds = rest % <span class="num">60</span>
+<span class="fn">print</span>(total, <span class="str">"seconds ="</span>, hours, <span class="str">"h"</span>, minutes, <span class="str">"min"</span>, seconds, <span class="str">"s"</span>)
+<span class="cm"># AP: hours ← (total - total MOD 3600) / 3600</span></pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div><div class="step">
+  <div class="lab-level hard">TASK 3 · STRETCH · ~15 MIN</div>
+  <div class="step-title">Digit splitter</div>
+  <p>Set <code>n = 472</code>. Using only <code>//</code> and <code>%</code> (no strings!), pull out the hundreds, tens and ones digits. Print them, their sum, and the number with its digits reversed. Your code must still work if you change n to another 3-digit number, so test it with <code>n = 905</code> too.</p>
+  
+  <div class="expect">Expected output</div><pre class="code-block output small">Number: 472
+Digits: 4 7 2
+Sum: 13
+Reversed: 274</pre>
+  <div class="py-runner compact" data-tpl="task3"></div>
+<script type="text/plain" id="task3">
+n = 472
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th3">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts3">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th3"><code>n % 10</code> is the ones digit. <code>n // 10 % 10</code> is the tens digit. <code>n // 100</code> is the hundreds digit. Reversed = ones × 100 + tens × 10 + hundreds.</div>
+  <div class="hidden-block" id="ts3"><pre class="code-block">n = <span class="num">472</span>
+hundreds = n // <span class="num">100</span>
+tens = n // <span class="num">10</span> % <span class="num">10</span>
+ones = n % <span class="num">10</span>
+<span class="fn">print</span>(<span class="str">"Number:"</span>, n)
+<span class="fn">print</span>(<span class="str">"Digits:"</span>, hundreds, tens, ones)
+<span class="fn">print</span>(<span class="str">"Sum:"</span>, hundreds + tens + ones)
+<span class="fn">print</span>(<span class="str">"Reversed:"</span>, ones * <span class="num">100</span> + tens * <span class="num">10</span> + hundreds)</pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div>
+  </div>
+  <div class="score-card" id="scoreCard">
+    <div class="eyebrow">Homework result</div>
+    <div class="score-big" id="scoreBig"></div>
+    <div class="score-sub" id="scoreSub"></div>
+    <div class="score-band" id="scoreBand"></div>
+    <p style="font-size:13px;color:var(--ink-soft);margin-top:12px;">Tick the task boxes above when your code works. Then 📸 screenshot this card for your teacher.</p>
+  </div>
+</div>
+<script src="../assets/rk.js"></script>
+</body></html>

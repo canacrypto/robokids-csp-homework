@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 3 Homework · RoboKids</title>
+<link rel="stylesheet" href="../assets/rk.css">
+</head>
+<body class="page">
+<header class="topbar">
+  <div class="logo-wrap"><img src="../assets/logo.jpg" alt="RoboKids"></div>
+  <a href="../index.html" class="topbar-home">← All Homework</a>
+  <div class="topbar-title-wrap">
+    <div class="topbar-crumb">AP CSP · Session 3</div>
+    <div class="topbar-title">Homework</div>
+  </div>
+  <div class="topbar-section-tag" id="sectionTag">HOMEWORK</div>
+</header>
+
+<div class="page-wrap" id="hwRoot" data-session="Session 3 · IF / ELSE &amp; Boolean Logic">
+  <div class="page-hero">
+    <div class="title-eyebrow">Session 3 · Homework</div>
+    <h1>IF / ELSE &amp; Boolean Logic</h1>
+    <p>About 30–50 minutes. Answer the multiple-choice questions first (they're in AP pseudocode, like the exam), then the 3 Python coding tasks: a warm-up, a challenge and a stretch task. Due before next session.</p>
+    <div class="meta-row"><span class="meta-chip">5 AP-style MCQ</span><span class="meta-chip">3 coding tasks</span><span class="meta-chip">Python runs right in this page</span></div>
+    <div style="margin-top:16px;position:relative;"><input class="name-input" id="nameInput" placeholder="Your name"></div>
+  </div>
+  <div class="card">
+    <h3 class="card-title">Part A · Multiple choice</h3>
+    <p>Pick an answer for each (two where it says so), then press <b>Check my answers</b> to see your score and the explanations.</p>
+    <div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q1</span><span class="q-topic">IF / ELSE</span></div>
+  <div class="q-text">What is displayed?</div>
+  <div class="quiz-code-prompt ap">x <span class="arrow">←</span> <span class="num">4</span>
+y <span class="arrow">←</span> <span class="num">9</span>
+<span class="kw">IF</span>(x &gt; y)
+{
+   <span class="fn">DISPLAY</span>(x)
+}
+<span class="kw">ELSE</span>
+{
+   <span class="fn">DISPLAY</span>(y)
+}</div>
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>9</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>4</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>4 9</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>x</code></div></div></div>
+  <div class="q-why"><strong>Answer: 9.</strong> 4 &gt; 9 is false, so the ELSE block displays y, which is 9. This code always displays the larger of the two numbers.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q2</span><span class="q-topic">Comparisons</span></div>
+  <div class="q-text">What is displayed by <code>DISPLAY((7 ≥ 7) AND (2 ≠ 2))</code>?</div>
+  
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>false</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>true</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>7</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text">Nothing: it causes an error</div></div></div>
+  <div class="q-why"><strong>Answer: false.</strong> 7 ≥ 7 is true (7 is at least 7). 2 ≠ 2 is false. true AND false is false.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q3</span><span class="q-topic">Boolean logic</span></div>
+  <div class="q-text">For which whole numbers <code>n</code> does this code display <code>yes</code>?</div>
+  <div class="quiz-code-prompt ap"><span class="kw">IF</span>((n &gt; <span class="num">3</span>) <span class="kw">AND</span> (n &lt; <span class="num">8</span>))
+{
+   <span class="fn">DISPLAY</span>(<span class="str">"yes"</span>)
+}</div>
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text">4, 5, 6 and 7 only</div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text">3, 4, 5, 6, 7 and 8</div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text">Every n greater than 3</div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text">4, 5, 6, 7 and 8</div></div></div>
+  <div class="q-why"><strong>Answer: 4, 5, 6 and 7 only.</strong> Both parts must be true: n &gt; 3 rules out 3 and below, and n &lt; 8 rules out 8 and above. &gt; and &lt; do not include the end values.</div>
+</div>
+<div class="q" data-ans="0">
+  <div class="q-head"><span class="quiz-q-num">Q4</span><span class="q-topic">Nested IF</span></div>
+  <div class="q-text">What is displayed?</div>
+  <div class="quiz-code-prompt ap">a <span class="arrow">←</span> <span class="num">3</span>
+b <span class="arrow">←</span> <span class="num">10</span>
+<span class="kw">IF</span>(a &gt; <span class="num">5</span>)
+{
+   b <span class="arrow">←</span> b + a
+}
+<span class="kw">ELSE</span>
+{
+   <span class="kw">IF</span>(b &gt; <span class="num">5</span>)
+   {
+      b <span class="arrow">←</span> b - a
+   }
+}
+<span class="fn">DISPLAY</span>(b)</div>
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>7</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>13</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>10</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>3</code></div></div></div>
+  <div class="q-why"><strong>Answer: 7.</strong> 3 &gt; 5 is false, so the ELSE runs. Inside it, 10 &gt; 5 is true, so b = 10 − 3 = 7. 13 comes from running the first block by mistake.</div>
+</div>
+<div class="q" data-ans="0,1" data-multi="2">
+  <div class="q-head"><span class="quiz-q-num">Q5</span><span class="q-topic">Selection</span></div>
+  <div class="pick2">Select two answers</div><div class="q-text"><code>num</code> is a whole number, 0 or more. Which <b>two</b> code segments display <code>even</code> when num is even, and display nothing when it is odd?</div>
+  
+  <div class="quiz-options"><div class="quiz-option"><div class="letter">A</div><div class="opt-text"><code>IF(num MOD 2 = 0) { DISPLAY("even") }</code></div></div><div class="quiz-option"><div class="letter">B</div><div class="opt-text"><code>IF(NOT (num MOD 2 = 1)) { DISPLAY("even") }</code></div></div><div class="quiz-option"><div class="letter">C</div><div class="opt-text"><code>IF(num / 2 = 0) { DISPLAY("even") }</code></div></div><div class="quiz-option"><div class="letter">D</div><div class="opt-text"><code>IF(num MOD 2 = 1) { DISPLAY("even") }</code></div></div></div>
+  <div class="q-why"><strong>Answer: "MOD 2 = 0" and "NOT (MOD 2 = 1)".</strong> For whole numbers the remainder is either 0 or 1, so "not 1" means "0". <code>num / 2 = 0</code> is only true for 0, and "MOD 2 = 1" picks the odd numbers.</div>
+</div>
+    <div style="text-align:center;margin-top:16px;"><button class="btn" id="checkHw">Check my answers</button></div>
+  </div>
+  <div class="card">
+    <h3 class="card-title">Part B · Coding tasks</h3>
+    <div class="step">
+  <div class="lab-level easy">TASK 1 · WARM-UP · ~10 MIN</div>
+  <div class="step-title">Battery alert</div>
+  <p>Set <code>battery = 18</code>. Print the battery level, then <code>Low battery!</code> if it is below 20, or <code>Battery OK</code> otherwise. Then test 20 and 75. Which message should 20 give?</p>
+  
+  <div class="expect">Expected output</div><pre class="code-block output small">Battery: 18%
+Low battery!</pre>
+  <div class="py-runner compact" data-tpl="task1"></div>
+<script type="text/plain" id="task1">
+battery = 18
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th1">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts1">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th1"><code>print("Battery: " + str(battery) + "%")</code> joins the text with no spaces. Then <code>if battery &lt; 20:</code>.</div>
+  <div class="hidden-block" id="ts1"><pre class="code-block">battery = <span class="num">18</span>
+<span class="fn">print</span>(<span class="str">"Battery: "</span> + <span class="fn">str</span>(battery) + <span class="str">"%"</span>)
+<span class="kw">if</span> battery &lt; <span class="num">20</span>:
+    <span class="fn">print</span>(<span class="str">"Low battery!"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Battery OK"</span>)</pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div><div class="step">
+  <div class="lab-level hard">TASK 2 · CHALLENGE · ~15 MIN</div>
+  <div class="step-title">Report card</div>
+  <p>Set <code>score = 77</code> and <code>attendance = 95</code>. Print the letter grade (90+ A, 80+ B, 70+ C, 60+ D, else F). <b>Honour roll</b> needs a score of at least 85 <b>and</b> attendance of at least 90. <b>Needs support</b> is a score below 60 <b>or</b> attendance below 80. Test with (92, 95), (55, 99) and (88, 70) too.</p>
+  
+  <div class="expect">Expected output</div><pre class="code-block output small">Score 77: C
+Honour roll: no
+Needs support: no</pre>
+  <div class="py-runner compact" data-tpl="task2"></div>
+<script type="text/plain" id="task2">
+score = 77
+attendance = 95
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th2">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts2">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th2">Store the grade in a variable with an <code>if / elif</code> chain (highest first), then <code>print("Score " + str(score) + ": " + grade)</code>.</div>
+  <div class="hidden-block" id="ts2"><pre class="code-block">score = <span class="num">77</span>
+attendance = <span class="num">95</span>
+<span class="kw">if</span> score &gt;= <span class="num">90</span>:
+    grade = <span class="str">"A"</span>
+<span class="kw">elif</span> score &gt;= <span class="num">80</span>:
+    grade = <span class="str">"B"</span>
+<span class="kw">elif</span> score &gt;= <span class="num">70</span>:
+    grade = <span class="str">"C"</span>
+<span class="kw">elif</span> score &gt;= <span class="num">60</span>:
+    grade = <span class="str">"D"</span>
+<span class="kw">else</span>:
+    grade = <span class="str">"F"</span>
+<span class="fn">print</span>(<span class="str">"Score "</span> + <span class="fn">str</span>(score) + <span class="str">": "</span> + grade)
+<span class="kw">if</span> score &gt;= <span class="num">85</span> <span class="kw">and</span> attendance &gt;= <span class="num">90</span>:
+    <span class="fn">print</span>(<span class="str">"Honour roll: yes"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Honour roll: no"</span>)
+<span class="kw">if</span> score &lt; <span class="num">60</span> <span class="kw">or</span> attendance &lt; <span class="num">80</span>:
+    <span class="fn">print</span>(<span class="str">"Needs support: yes"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Needs support: no"</span>)</pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div><div class="step">
+  <div class="lab-level hard">TASK 3 · STRETCH · ~15 MIN</div>
+  <div class="step-title">Rock, paper, scissors judge</div>
+  <p>Set <code>p1 = "rock"</code> and <code>p2 = "scissors"</code>. Print the match, then <code>Tie</code>, <code>Player 1 wins</code> or <code>Player 2 wins</code>. Rock beats scissors, scissors beats paper, paper beats rock. Use <b>one</b> condition built with <code>and</code> / <code>or</code> to decide whether Player 1 wins. Test at least four different pairs, including a tie.</p>
+  
+  <div class="expect">Expected output</div><pre class="code-block output small">rock vs scissors
+Player 1 wins</pre>
+  <div class="py-runner compact" data-tpl="task3"></div>
+<script type="text/plain" id="task3">
+p1 = "rock"
+p2 = "scissors"
+</script>
+  <div class="btn-row">
+    <button class="small-btn toggle-btn" data-box="th3">Show hint ▾</button>
+    <button class="small-btn toggle-btn" data-box="ts3">Show solution ▾</button>
+  </div>
+  <div class="hidden-block demo-note" id="th3">Check for a tie first. Player 1 wins if <code>(p1 == "rock" and p2 == "scissors") or (…) or (…)</code>. Anything else means Player 2 wins.</div>
+  <div class="hidden-block" id="ts3"><pre class="code-block">p1 = <span class="str">"rock"</span>
+p2 = <span class="str">"scissors"</span>
+<span class="fn">print</span>(p1, <span class="str">"vs"</span>, p2)
+<span class="kw">if</span> p1 == p2:
+    <span class="fn">print</span>(<span class="str">"Tie"</span>)
+<span class="kw">elif</span> (p1 == <span class="str">"rock"</span> <span class="kw">and</span> p2 == <span class="str">"scissors"</span>) <span class="kw">or</span> (p1 == <span class="str">"scissors"</span> <span class="kw">and</span> p2 == <span class="str">"paper"</span>) <span class="kw">or</span> (p1 == <span class="str">"paper"</span> <span class="kw">and</span> p2 == <span class="str">"rock"</span>):
+    <span class="fn">print</span>(<span class="str">"Player 1 wins"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Player 2 wins"</span>)</pre></div>
+  <div class="rubric"><label><input type="checkbox" class="task-done"> <span>My program runs and prints the expected output, and I wrote it myself.</span></label></div>
+</div>
+  </div>
+  <div class="score-card" id="scoreCard">
+    <div class="eyebrow">Homework result</div>
+    <div class="score-big" id="scoreBig"></div>
+    <div class="score-sub" id="scoreSub"></div>
+    <div class="score-band" id="scoreBand"></div>
+    <p style="font-size:13px;color:var(--ink-soft);margin-top:12px;">Tick the task boxes above when your code works. Then 📸 screenshot this card for your teacher.</p>
+  </div>
+</div>
+<script src="../assets/rk.js"></script>
+</body></html>
